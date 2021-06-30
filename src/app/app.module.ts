@@ -4,20 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { LogInComponent } from './log-in/log-in.component';
+import { LogInComponent } from './auth/log-in/log-in.component';
+import { HeaderComponent } from './header/header.component';
+import { SchoolsListComponent } from './schools-list/schools-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ShoolInfoComponent } from './shool-info/shool-info.component';
+import { WorkordersListComponent } from './workorders-list/workorders-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    LogInComponent
+    LogInComponent,
+    HeaderComponent,
+    SchoolsListComponent,
+    ShoolInfoComponent,
+    WorkordersListComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,8 @@ import { LogInComponent } from './log-in/log-in.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
