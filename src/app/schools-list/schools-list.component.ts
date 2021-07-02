@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-schools-list',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SchoolsListComponent implements OnInit {
   schools: string[] = ['Smoky Hill', 'Laredo','Independence', 'Sky Vista', 'Overland']
-  constructor() { }
+
+  constructor(private _route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
   }
 
 }

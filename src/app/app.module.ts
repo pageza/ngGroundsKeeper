@@ -14,8 +14,10 @@ import { LogInComponent } from './auth/log-in/log-in.component';
 import { HeaderComponent } from './header/header.component';
 import { SchoolsListComponent } from './schools-list/schools-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ShoolInfoComponent } from './shool-info/shool-info.component';
+import { SchoolInfoComponent } from './shool-info/school-info.component';
 import { WorkordersListComponent } from './workorders-list/workorders-list.component';
+import {MatCardModule} from "@angular/material/card";
+import { MainViewComponent } from './main-view/main-view.component';
 
 @NgModule({
   declarations: [
@@ -23,21 +25,23 @@ import { WorkordersListComponent } from './workorders-list/workorders-list.compo
     LogInComponent,
     HeaderComponent,
     SchoolsListComponent,
-    ShoolInfoComponent,
-    WorkordersListComponent
+    SchoolInfoComponent,
+    WorkordersListComponent,
+    MainViewComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    NgbModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        LayoutModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        NgbModule,
+        MatCardModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,3 +1,10 @@
+#school-list {
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  max-width: 15%;
+}
 h2 {
   text-align: center;
   margin-top: 10px;
