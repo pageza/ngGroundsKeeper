@@ -5,7 +5,6 @@
 - [ ] Create Roles 'Admin, Supervisor, Manager, etc.'
 - [ ] Create Role-based Views
 - [ ] Create View for One Work Order
-- [ ] 
 
 # NgGroundsKeeper
 
