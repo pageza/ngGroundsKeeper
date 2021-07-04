@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-main-view',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-view.component.css']
 })
 export class MainViewComponent implements OnInit {
-  constructor() { }
+  school: any
+  constructor(
+    private _route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
-
+    this._route.params.subscribe( params => {
+      this.school = params.name
+    })
   }
 
 }

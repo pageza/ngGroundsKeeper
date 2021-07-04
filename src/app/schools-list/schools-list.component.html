@@ -3,14 +3,12 @@
     <h2>Schools</h2>
     <ul>
       <li *ngFor="let school of schools">
-        <a mat-button routerLink="/{{school}}">{{school}}</a>
+        <a mat-button [routerLink]="[school]">{{school}}</a>
       </li>
     </ul>
   </div>
-
-  <div class="col-8">
-    <app-school-info ></app-school-info>
-    <app-workorders-list></app-workorders-list>
-  </div>
-
+  <router-outlet></router-outlet>
+<!--  <div class="col-8">-->
+<!--    <app-main-view></app-main-view>-->
+<!--  </div>-->
 </div>

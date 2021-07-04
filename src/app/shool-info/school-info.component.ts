@@ -1,5 +1,4 @@
-import { Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-school-info',
@@ -7,17 +6,14 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./school-info.component.css']
 })
 export class SchoolInfoComponent implements OnInit {
-  params: any
-  school: any
-  constructor(private _route: ActivatedRoute) {
-    this.getParams()
-  }
+
+  @Input() school: any
+
+  constructor() {  }
+
   ngOnInit(): void {
-    this.school = this.getParams()
-    console.log(this.school)
+
   }
-  getParams() {
-    this._route.params.subscribe( params => this.params = params)
-  }
+
 
 }
