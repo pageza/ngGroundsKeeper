@@ -1,3 +1,12 @@
+#TODO:
+- [ ] Add component to create Work Order
+- [ ] Create Services to pull/push data from MySQL server
+- [ ] Add Authentication and Authorization to routes
+- [ ] Create Roles 'Admin, Supervisor, Manager, etc.'
+- [ ] Create Role-based Views
+- [ ] Create View for One Work Order
+- [ ] 
+
 # NgGroundsKeeper
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
