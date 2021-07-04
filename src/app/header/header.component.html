@@ -5,8 +5,7 @@
   <span class="spacer_two"></span>
   <h3>{{ user }}</h3>
   <span class="spacer"></span>
-
 <!--  Some Navigation links will go here, to be shown after authentication -->
-  <a routerLink="/workorders">Work Orders</a>
+  <a *ngIf="showWorkOrdersLink()" routerLink="/workorders">Work Orders</a>
   <span class="spacer_two"></span>
 </mat-toolbar>

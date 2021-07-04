@@ -1,0 +1,13 @@
+#school-info {
+  margin-top: 5px;
+  margin-left: 2%;
+  /*margin-right: 2%;*/
+  padding: 2%;
+  /*border: 2px solid black;*/
+  /*border-radius: 20px;*/
+  /*background-color: lightskyblue;*/
+}
+a {
+  text-decoration: none;
+  color: black;
+}
