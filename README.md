@@ -1,5 +1,5 @@
-#TODO:
-- [ ] Add component to create Work Order
+# TODO:
+- [x] Add component to create Work Order
 - [ ] Create Services to pull/push data from MySQL server
 - [ ] Add Authentication and Authorization to routes
 - [ ] Create Roles 'Admin, Supervisor, Manager, etc.'

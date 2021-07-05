@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-one-school',
@@ -9,13 +9,17 @@ import {ActivatedRoute} from "@angular/router";
 export class OneSchoolComponent implements OnInit {
   school: any
   constructor(
-    private _route: ActivatedRoute
+    private _route: ActivatedRoute,
+    private _router: Router
   ) { }
 
   ngOnInit(): void {
     this._route.params.subscribe( params => {
       this.school = params.name
     })
+  }
+  createWorkorder() {
+    this._router.navigate(['/workorder/create/', this.school])
   }
 
 }

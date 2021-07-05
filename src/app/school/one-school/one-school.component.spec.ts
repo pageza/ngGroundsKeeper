@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterTestingModule } from "@angular/router/testing";
 import { OneSchoolComponent } from './one-school.component';
 
 describe('OneSchoolComponent', () => {
@@ -8,7 +8,8 @@ describe('OneSchoolComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OneSchoolComponent ]
+      declarations: [ OneSchoolComponent ],
+      imports: [RouterTestingModule]
     })
     .compileComponents();
   });
