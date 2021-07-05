@@ -21,6 +21,7 @@ import { MainViewComponent } from './main-view/main-view.component';
 import { AllWorkordersComponent } from './all-workorders/all-workorders.component';
 import { OneSchoolComponent } from './one-school/one-school.component';
 import { OneWorkorderComponent } from './one-workorder/one-workorder.component';
+import { CreateWorkorderComponent } from './create-workorder/create-workorder.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { OneWorkorderComponent } from './one-workorder/one-workorder.component';
     MainViewComponent,
     AllWorkordersComponent,
     OneSchoolComponent,
-    OneWorkorderComponent
+    OneWorkorderComponent,
+    CreateWorkorderComponent
   ],
     imports: [
         BrowserModule,

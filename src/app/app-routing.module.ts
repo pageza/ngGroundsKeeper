@@ -7,6 +7,7 @@ import {WorkordersListComponent} from "./workorders-list/workorders-list.compone
 import {AllWorkordersComponent} from "./all-workorders/all-workorders.component";
 import {OneSchoolComponent} from "./one-school/one-school.component";
 import {OneWorkorderComponent} from "./one-workorder/one-workorder.component";
+import {CreateWorkorderComponent} from "./create-workorder/create-workorder.component";
 
 const routes: Routes = [
   {path: 'login', component: LogInComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'workorders', component: AllWorkordersComponent},
   {path: 'workorders/:school', component: WorkordersListComponent},
   {path: 'workorder/:id', component: OneWorkorderComponent},
+  {path: 'workorder/create/:school', component: CreateWorkorderComponent},
   {path: '', pathMatch: 'full', redirectTo: '/schools'}
 ];
 
