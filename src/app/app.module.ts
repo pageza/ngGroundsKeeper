@@ -12,16 +12,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { LogInComponent } from './auth/log-in/log-in.component';
 import { HeaderComponent } from './header/header.component';
-import { SchoolsListComponent } from './schools-list/schools-list.component';
+import { SchoolsListComponent } from './school/schools-list/schools-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SchoolInfoComponent } from './shool-info/school-info.component';
-import { WorkordersListComponent } from './workorders-list/workorders-list.component';
+import { SchoolInfoComponent } from './school/shool-info/school-info.component';
+import { WorkordersListComponent } from './workorder/workorders-list/workorders-list.component';
 import {MatCardModule} from "@angular/material/card";
-import { MainViewComponent } from './main-view/main-view.component';
-import { AllWorkordersComponent } from './all-workorders/all-workorders.component';
-import { OneSchoolComponent } from './one-school/one-school.component';
-import { OneWorkorderComponent } from './one-workorder/one-workorder.component';
-import { CreateWorkorderComponent } from './create-workorder/create-workorder.component';
+import { MainViewComponent } from './school/main-view/main-view.component';
+import { AllWorkordersComponent } from './workorder/all-workorders/all-workorders.component';
+import { OneSchoolComponent } from './school/one-school/one-school.component';
+import { OneWorkorderComponent } from './workorder/one-workorder/one-workorder.component';
+import { CreateWorkorderComponent } from './workorder/create-workorder/create-workorder.component';
 
 @NgModule({
   declarations: [
