@@ -1,12 +1,6 @@
 <div id="work-orders-list">
-  <h2>
-    <a href="/workorders/{{school}}">{{school}} Work Orders</a>
-  </h2>
+  <h2>{{school}} Work Orders</h2>
   <ul>
-    <li>WO 1</li>
-    <li>WO 2</li>
-    <li>WO 3</li>
-    <li>WO 4</li>
-    <li>WO 5</li>
+    <li *ngFor="let workorder of activeWorkorders"><a routerLink="/workorder/{{workorder.id}}">Work Order #{{workorder.id}}</a></li>
   </ul>
 </div>

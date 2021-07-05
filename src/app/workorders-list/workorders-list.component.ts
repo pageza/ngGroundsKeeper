@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-workorders-list',
@@ -7,9 +8,14 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class WorkordersListComponent implements OnInit {
   @Input() school: any
-  constructor() { }
+  schoolName: any
+  activeWorkorders: any = [{'id':4}, {'id':5}, {'id':6}]
+  constructor(private _route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this._route.params.subscribe( params => {
+      this.schoolName = params.school
+    })
   }
 
 }

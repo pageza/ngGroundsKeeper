@@ -4,7 +4,7 @@
 - [ ] Add Authentication and Authorization to routes
 - [ ] Create Roles 'Admin, Supervisor, Manager, etc.'
 - [ ] Create Role-based Views
-- [ ] Create View for One Work Order
+- [x] Create View for One Work Order
 
 # NgGroundsKeeper
 
