@@ -1,1 +1,13 @@
-<p>all-workorders works!</p>
+<h1>Work Orders</h1>
+<h3>Active</h3>
+<div class="list">
+  <ul>
+    <li *ngFor="let workorder of activeWorkorders"><a href="/workorder/{{workorder.id}}">WO {{workorder.id}}</a></li>
+  </ul>
+</div>
+<h3>Completed</h3>
+<div class="list">
+  <ul>
+    <li *ngFor="let workorder of completedWorkorders"><a href="/workorder/{{workorder.id}}">WO {{workorder.id}}</a></li>
+  </ul>
+</div>

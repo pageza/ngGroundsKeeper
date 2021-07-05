@@ -20,6 +20,7 @@ import {MatCardModule} from "@angular/material/card";
 import { MainViewComponent } from './main-view/main-view.component';
 import { AllWorkordersComponent } from './all-workorders/all-workorders.component';
 import { OneSchoolComponent } from './one-school/one-school.component';
+import { OneWorkorderComponent } from './one-workorder/one-workorder.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { OneSchoolComponent } from './one-school/one-school.component';
     WorkordersListComponent,
     MainViewComponent,
     AllWorkordersComponent,
-    OneSchoolComponent
+    OneSchoolComponent,
+    OneWorkorderComponent
   ],
     imports: [
         BrowserModule,
