@@ -8,7 +8,7 @@ import {SchoolsService} from "../../schools.service";
 })
 export class SchoolsListComponent implements OnInit, OnDestroy {
 
-  schools: any = ['Smoky', 'Overland']
+  schools: any
 
   // @ts-ignore
   private schoolsSubscription
@@ -22,7 +22,7 @@ export class SchoolsListComponent implements OnInit, OnDestroy {
   }
 
   getSchools() {
-    this.schoolsSubscription = this.schoolsService.getSchools()
+    this.schoolsSubscription = this.schoolsService.getSchoolsService()
       .subscribe( data => {
         this.schools = data
       })
