@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
   ) {
     _router.events.forEach( event => {
       if (event instanceof NavigationEnd) {
-        console.log(event.url)
         this.currentRoute = event.url
       }
     })
