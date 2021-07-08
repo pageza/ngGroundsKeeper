@@ -1,10 +1,11 @@
 # TODO:
-- [x] Add component to create Work Order
 - [ ] Create Services to pull/push data from MySQL server
+- [ ] Create database validations before interacting with DB  
 - [ ] Add Authentication and Authorization to routes
 - [ ] Create Roles 'Admin, Supervisor, Manager, etc.'
 - [ ] Create Role-based Views
 - [x] Create View for One Work Order
+- [x] Add component to create Work Order
 
 # NgGroundsKeeper
 

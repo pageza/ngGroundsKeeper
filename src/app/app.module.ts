@@ -22,6 +22,7 @@ import { AllWorkordersComponent } from './workorder/all-workorders/all-workorder
 import { OneSchoolComponent } from './school/one-school/one-school.component';
 import { OneWorkorderComponent } from './workorder/one-workorder/one-workorder.component';
 import { CreateWorkorderComponent } from './workorder/create-workorder/create-workorder.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { CreateWorkorderComponent } from './workorder/create-workorder/create-wo
         MatIconModule,
         MatListModule,
         NgbModule,
-        MatCardModule
+        MatCardModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
