@@ -11,7 +11,10 @@ export class SchoolsService {
   constructor(
     private _http: HttpClient,
   ) { }
-  getSchools() {
+  getSchoolsService() {
     return this._http.get('//localhost:6789/api/schools')
+  }
+  getSchoolInfoService(name: string) {
+    return this._http.get('//localhost:6789/api/schools/info/' + name)
   }
 }
