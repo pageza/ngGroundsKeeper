@@ -5,11 +5,15 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class WorkordersService {
+  private API_URL = '//localhost:6789/api/workorders/'
   public workOrderCount = 0
   constructor(
     private _http: HttpClient
   ) { }
   getWorkOrderCountService(id: any) {
-    return this._http.get('//localhost:6789/api/workorders/count/' + id)
+    return this._http.get(this.API_URL + 'count/' + id)
+  }
+  getWorkOrdersForSchool(name: string) {
+    return this._http.get( this.API_URL + 'location/'+ name)
   }
 }

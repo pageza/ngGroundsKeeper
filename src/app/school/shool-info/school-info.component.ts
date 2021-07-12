@@ -14,6 +14,7 @@ export class SchoolInfoComponent implements OnInit, OnDestroy, OnChanges {
   schoolInfo: any
   schoolAddress: any = {}
   workOrderCount: any
+  workOrders: any = []
 
   private schoolsSubscription: any
   private workOrdersSubscription: any
