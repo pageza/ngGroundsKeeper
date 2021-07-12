@@ -1,6 +1,6 @@
 <div id="work-orders-list">
   <h2>{{school}} Work Orders</h2>
-<!--  TODO: Add logic to display something else if there are no active work orders-->
+  <h4 *ngIf="workOrders.length === 0">No active Work Orders</h4>
   <ul>
     <li *ngFor="let workOrder of workOrders" >
       <p><a routerLink="/workorder/{{workOrder.id}}" >WO# - {{workOrder.id}}</a></p>

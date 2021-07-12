@@ -16,7 +16,7 @@ export class SchoolInfoComponent implements OnInit, OnDestroy, OnChanges {
   workOrderCount: any
   workOrders: any = []
 
-  private schoolsSubscription: any
+  private schoolSubscription: any
   private workOrdersSubscription: any
 
   constructor(
@@ -26,7 +26,7 @@ export class SchoolInfoComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnInit(): void {
-    this.schoolsSubscription = this._schoolsService.getSchoolInfoService(this.school)
+    this.schoolSubscription = this._schoolsService.getSchoolInfoService(this.school)
       .subscribe( data => {
         this.schoolInfo = data
         this.schoolAddress = Object.values(this.schoolInfo[0])
@@ -43,7 +43,7 @@ export class SchoolInfoComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnDestroy() {
-    this.schoolsSubscription.unsubscribe()
+    this.schoolSubscription.unsubscribe()
     this.workOrdersSubscription.unsubscribe()
   }
 }
